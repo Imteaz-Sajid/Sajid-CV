@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kazi Hasan Imteaz — Software Engineer & CSE Student</title>
+  <meta name="description" content="Portfolio of Kazi Hasan Imteaz — Undergraduate CSE Student at BRAC University, MERN Stack Developer, and ML Enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">KHI<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://github.com/Imteaz-Sajid?tab=repositories" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub ↗</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <!-- Left: text -->
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              Available for opportunities
+            </div>
+            <h1 class="hero-title">
+              Kazi Hasan <span class="accent gradient-text">Imteaz</span>
+            </h1>
+            <p class="hero-subtitle">Software Engineer &amp; CSE Student</p>
+            <p class="hero-pitch">
+              Undergraduate CSE student at BRAC University focused on high-performance applications.
+              Researching <strong>Edge Diffusion</strong> for resource-constrained ML, with hands-on
+              MERN stack expertise and a track record of shipping production-ready software.
+            </p>
+            <div class="hero-cta">
+              <a href="https://github.com/Imteaz-Sajid?tab=repositories" target="_blank" rel="noopener" class="btn btn-primary" id="hero-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View GitHub
+              </a>
+              <a href="#" class="btn btn-outline" id="hero-download" onclick="window.print(); return false;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download CV
+              </a>
+              <a href="#contact" class="btn btn-ghost" id="hero-contact">Contact Me →</a>
+            </div>
+            <div class="hero-meta">
+              <span>📍 Tengra, Sharulia, Demra, Dhaka</span>
+              <span>🎓 BRAC University — CGPA 3.90</span>
+              <span>💼 Open to Work</span>
+            </div>
+          </div>
+
+          <!-- Right: profile photo -->
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-ring">
+              <img src="profile.png" alt="Kazi Hasan Imteaz" class="hero-photo" />
+            </div>
+            <div class="hero-photo-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">Technologies and tools I work with regularly</p>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-card-icon">⚡</div>
+            <h3 class="skill-card-title">Languages</h3>
+            <div class="badge-group">
+              <span class="badge badge-lang">Python</span>
+              <span class="badge badge-lang">C</span>
+              <span class="badge badge-lang">C++</span>
+              <span class="badge badge-lang">Java</span>
+              <span class="badge badge-lang">PHP</span>
+              <span class="badge badge-lang">SQL</span>
+              <span class="badge badge-lang">x86 Assembly</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">🌐</div>
+            <h3 class="skill-card-title">Web Development</h3>
+            <div class="badge-group">
+              <span class="badge badge-web">HTML5</span>
+              <span class="badge badge-web">CSS3</span>
+              <span class="badge badge-web">JavaScript</span>
+              <span class="badge badge-web">React</span>
+              <span class="badge badge-web">Node.js</span>
+              <span class="badge badge-web">Express</span>
+              <span class="badge badge-web">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">🤖</div>
+            <h3 class="skill-card-title">AI / ML</h3>
+            <div class="badge-group">
+              <span class="badge badge-ai">Machine Learning</span>
+              <span class="badge badge-ai">Edge Diffusion</span>
+              <span class="badge badge-ai">AI Integration</span>
+              <span class="badge badge-ai">Data Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">🛠️</div>
+            <h3 class="skill-card-title">Tools & Design</h3>
+            <div class="badge-group">
+              <span class="badge badge-tool">Git</span>
+              <span class="badge badge-tool">GitHub</span>
+              <span class="badge badge-tool">OpenGL</span>
+              <span class="badge badge-tool">MASM/TASM</span>
+              <span class="badge badge-tool">DOSBox</span>
+              <span class="badge badge-tool">Photoshop</span>
+              <span class="badge badge-tool">Figma</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Selected projects that showcase my problem-solving approach</p>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card featured" id="project-dhor">
+            <div class="project-card-header">
+              <div class="project-icon">🛡️</div>
+              <div class="project-links">
+                <a href="https://github.com/Imteaz-Sajid?tab=repositories" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Dhor</h3>
+            <p class="project-desc">
+              A crowdsourced, map-based community safety and crime reporting platform built on the MERN stack.
+              Empowers citizens to report incidents instantly, alerts nearby users of dangerous zones, and
+              provides law enforcement with real-time, AI-verified data to track and stop crime.
+            </p>
+            <div class="badge-group">
+              <span class="badge badge-tech">MongoDB</span>
+              <span class="badge badge-tech">Express</span>
+              <span class="badge badge-tech">React</span>
+              <span class="badge badge-tech">Node.js</span>
+              <span class="badge badge-tech">AI/ML</span>
+              <span class="badge badge-tech">Maps API</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-tomb">
+            <div class="project-card-header">
+              <div class="project-icon">🎮</div>
+              <div class="project-links">
+                <a href="https://github.com/Imteaz-Sajid?tab=repositories" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Tomb Runner</h3>
+            <p class="project-desc">
+              An OpenGL-based 3D perspective game featuring 3 consecutive levels with unique
+              scenarios and increasing difficulty. Built with real-time 3D rendering,
+              collision detection, and custom level design.
+            </p>
+            <div class="badge-group">
+              <span class="badge badge-tech">C++</span>
+              <span class="badge badge-tech">OpenGL</span>
+              <span class="badge badge-tech">GLUT</span>
+              <span class="badge badge-tech">3D Graphics</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-pos">
+            <div class="project-card-header">
+              <div class="project-icon">🏪</div>
+              <div class="project-links">
+                <a href="https://github.com/Imteaz-Sajid?tab=repositories" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Restaurant POS — Assembly</h3>
+            <p class="project-desc">
+              A 16-bit x86 Assembly restaurant management system with a live-updating
+              customer order/reservation portal and a secure owner dashboard for inventory.
+              Uses Intel syntax, modular procedures, and direct 8086 MS-DOS INT 21h hardware
+              interrupts, compiled via MASM/TASM within DOSBox.
+            </p>
+            <div class="badge-group">
+              <span class="badge badge-tech">x86 Assembly</span>
+              <span class="badge badge-tech">MASM/TASM</span>
+              <span class="badge badge-tech">DOSBox</span>
+              <span class="badge badge-tech">8086</span>
+              <span class="badge badge-tech">MS-DOS</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-chadabaj">
+            <div class="project-card-header">
+              <div class="project-icon">💬</div>
+              <div class="project-links">
+                <a href="https://github.com/Imteaz-Sajid/Chadabaj" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Chadabaj</h3>
+            <p class="project-desc">
+              A full-stack MERN stack web application. Built with MongoDB, Express, React,
+              and Node.js, featuring a modern UI and RESTful API architecture.
+            </p>
+            <div class="badge-group">
+              <span class="badge badge-tech">MongoDB</span>
+              <span class="badge badge-tech">Express</span>
+              <span class="badge badge-tech">React</span>
+              <span class="badge badge-tech">Node.js</span>
+              <span class="badge badge-tech">REST API</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-friendora">
+            <div class="project-card-header">
+              <div class="project-icon">🤝</div>
+              <div class="project-links">
+                <a href="https://github.com/Imteaz-Sajid/Friendora" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Friendora</h3>
+            <p class="project-desc">
+              A feature-rich social media platform enabling users to connect, share, and
+              interact. Built with a full MERN stack with real-time capabilities,
+              user authentication, and dynamic news feeds.
+            </p>
+            <div class="badge-group">
+              <span class="badge badge-tech">MongoDB</span>
+              <span class="badge badge-tech">Express</span>
+              <span class="badge badge-tech">React</span>
+              <span class="badge badge-tech">Node.js</span>
+              <span class="badge badge-tech">Socket.io</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-pm-sim">
+            <div class="project-card-header">
+              <div class="project-icon">⚙️</div>
+              <div class="project-links">
+                <a href="https://github.com/Imteaz-Sajid/Multithreaded-Process-Manager-Simulator-" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Multithreaded Process Manager</h3>
+            <p class="project-desc">
+              A simulated OS process management subsystem in C using POSIX threads (pthreads)
+              and synchronization primitives. Simulates an OS process table with concurrent
+              worker threads, a monitor thread for logging, and full process lifecycle
+              operations (fork, exit, wait, kill, ps).
+            </p>
+            <div class="badge-group">
+              <span class="badge badge-tech">C</span>
+              <span class="badge badge-tech">POSIX Threads</span>
+              <span class="badge badge-tech">pthreads</span>
+              <span class="badge badge-tech">Mutex/Semaphore</span>
+              <span class="badge badge-tech">OS Simulation</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Career</span>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-desc">Roles where I've delivered real-world impact</p>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item" id="exp-freelance">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2025 — Present</span>
+                <span class="timeline-badge current">Current</span>
+              </div>
+              <h3 class="timeline-title">Freelance Web Developer</h3>
+              <p class="timeline-org">Self-Employed</p>
+              <ul class="timeline-list">
+                <li>Architect and deploy custom, responsive websites for diverse clients utilizing modern web technologies (HTML5, CSS3, JavaScript, and modern frameworks).</li>
+                <li>Translate client requirements and design wireframes into clean, maintainable, and high-converting user interfaces.</li>
+              </ul>
+              <div class="badge-group">
+                <span class="badge badge-sm">HTML5</span>
+                <span class="badge badge-sm">CSS3</span>
+                <span class="badge badge-sm">JavaScript</span>
+                <span class="badge badge-sm">React</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="exp-ez">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2023 — 2024</span>
+              </div>
+              <h3 class="timeline-title">Senior Graphics Designer</h3>
+              <p class="timeline-org">EZ Gadgets</p>
+              <ul class="timeline-list">
+                <li>Led visual branding strategy and executed high-impact graphic design assets across digital, print, and social media marketing campaigns.</li>
+                <li>Managed design projects from concept to final delivery, ensuring all deadlines were met while maintaining rigorous quality and brand standards.</li>
+              </ul>
+              <div class="badge-group">
+                <span class="badge badge-sm">Photoshop</span>
+                <span class="badge badge-sm">Brand Design</span>
+                <span class="badge badge-sm">Digital Marketing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Academia</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">My academic journey and achievements</p>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item" id="edu-brac">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2022 — 2026</span>
+                <span class="timeline-badge current">Ongoing</span>
+              </div>
+              <h3 class="timeline-title">B.Sc. in Computer Science &amp; Engineering</h3>
+              <p class="timeline-org">BRAC University</p>
+              <p class="timeline-detail">CGPA: <strong class="accent">3.90</strong> / 4.00 &nbsp;·&nbsp; Thesis: Edge Diffusion for resource-constrained ML environments</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="edu-hsc">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2019 — 2021</span>
+              </div>
+              <h3 class="timeline-title">HSC — Science</h3>
+              <p class="timeline-org">Saint Joseph Higher Secondary School</p>
+              <p class="timeline-detail">GPA: <strong class="accent">5.00</strong> / 5.00</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="edu-ssc">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2009 — 2019</span>
+              </div>
+              <h3 class="timeline-title">SSC — Science</h3>
+              <p class="timeline-org">Bawany Adarshaw Biddyalaya</p>
+              <p class="timeline-detail">GPA: <strong class="accent">5.00</strong> / 5.00</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Let's Talk</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">Open to internships, freelance work, and full-time roles</p>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:imteazsajid@email.com" class="contact-card" id="contact-email">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">imteazsajid@email.com</div>
+            </div>
+          </a>
+          <a href="https://github.com/Imteaz-Sajid" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">Imteaz-Sajid</div>
+            </div>
+          </a>
+          <a href="https://www.behance.net/imteazsajid" target="_blank" rel="noopener" class="contact-card" id="contact-behance">
+            <div class="contact-icon">🎨</div>
+            <div>
+              <div class="contact-label">Behance</div>
+              <div class="contact-value">behance.net/imteazsajid</div>
+            </div>
+          </a>
+          <a href="tel:+8801848643006" class="contact-card" id="contact-phone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+880 1848 643006</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Kazi Hasan Imteaz</span>
+      <span class="footer-copy">© 2025 · Built with HTML, CSS &amp; JS</span>
+      <a href="https://github.com/Imteaz-Sajid" target="_blank" rel="noopener" class="footer-gh">GitHub ↗</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
